@@ -19,6 +19,14 @@
 		0A962B121948C3AB0000FA96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A962AFA1948C3AB0000FA96 /* UIKit.framework */; };
 		0A962B1A1948C3AB0000FA96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A962B181948C3AB0000FA96 /* InfoPlist.strings */; };
 		0A962B1C1948C3AB0000FA96 /* DropDownMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A962B1B1948C3AB0000FA96 /* DropDownMenuTests.m */; };
+		0A962B271948C4850000FA96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A962B261948C4850000FA96 /* ViewController.m */; };
+		0A962B2A1948C5890000FA96 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A962B291948C5890000FA96 /* ViewController.xib */; };
+		0A962B2D1948C70D0000FA96 /* DropDownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A962B2C1948C70D0000FA96 /* DropDownMenuController.m */; };
+		0A962B4D1948CFC80000FA96 /* IonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A962B491948CFC80000FA96 /* IonIcons.m */; };
+		0A962B4E1948CFC80000FA96 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A962B4A1948CFC80000FA96 /* ionicons.ttf */; };
+		0A962B4F1948CFC80000FA96 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0A962B4B1948CFC80000FA96 /* LICENSE */; };
+		0A962B501948CFC80000FA96 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A962B4C1948CFC80000FA96 /* README.md */; };
+		0A962B53194915B40000FA96 /* UIBarButtonItem+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A962B52194915B40000FA96 /* UIBarButtonItem+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,19 @@
 		0A962B171948C3AB0000FA96 /* DropDownMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropDownMenuTests-Info.plist"; sourceTree = "<group>"; };
 		0A962B191948C3AB0000FA96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A962B1B1948C3AB0000FA96 /* DropDownMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuTests.m; sourceTree = "<group>"; };
+		0A962B251948C4850000FA96 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A962B261948C4850000FA96 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A962B291948C5890000FA96 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0A962B2B1948C70D0000FA96 /* DropDownMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownMenuController.h; sourceTree = "<group>"; };
+		0A962B2C1948C70D0000FA96 /* DropDownMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuController.m; sourceTree = "<group>"; };
+		0A962B471948CFC80000FA96 /* ionicons-codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ionicons-codes.h"; sourceTree = "<group>"; };
+		0A962B481948CFC80000FA96 /* IonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IonIcons.h; sourceTree = "<group>"; };
+		0A962B491948CFC80000FA96 /* IonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IonIcons.m; sourceTree = "<group>"; };
+		0A962B4A1948CFC80000FA96 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		0A962B4B1948CFC80000FA96 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0A962B4C1948CFC80000FA96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0A962B51194915B40000FA96 /* UIBarButtonItem+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Frame.h"; sourceTree = "<group>"; };
+		0A962B52194915B40000FA96 /* UIBarButtonItem+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +128,13 @@
 		0A962AFC1948C3AB0000FA96 /* DropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				0A962B461948CFC80000FA96 /* ionicons */,
+				0A962B281948C5650000FA96 /* DropDownMenu */,
 				0A962B051948C3AB0000FA96 /* AppDelegate.h */,
 				0A962B061948C3AB0000FA96 /* AppDelegate.m */,
+				0A962B251948C4850000FA96 /* ViewController.h */,
+				0A962B261948C4850000FA96 /* ViewController.m */,
+				0A962B291948C5890000FA96 /* ViewController.xib */,
 				0A962B081948C3AB0000FA96 /* Images.xcassets */,
 				0A962AFD1948C3AB0000FA96 /* Supporting Files */,
 			);
@@ -142,6 +168,30 @@
 				0A962B181948C3AB0000FA96 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A962B281948C5650000FA96 /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0A962B2B1948C70D0000FA96 /* DropDownMenuController.h */,
+				0A962B2C1948C70D0000FA96 /* DropDownMenuController.m */,
+				0A962B51194915B40000FA96 /* UIBarButtonItem+Frame.h */,
+				0A962B52194915B40000FA96 /* UIBarButtonItem+Frame.m */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		0A962B461948CFC80000FA96 /* ionicons */ = {
+			isa = PBXGroup;
+			children = (
+				0A962B471948CFC80000FA96 /* ionicons-codes.h */,
+				0A962B481948CFC80000FA96 /* IonIcons.h */,
+				0A962B491948CFC80000FA96 /* IonIcons.m */,
+				0A962B4A1948CFC80000FA96 /* ionicons.ttf */,
+				0A962B4B1948CFC80000FA96 /* LICENSE */,
+				0A962B4C1948CFC80000FA96 /* README.md */,
+			);
+			path = ionicons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +269,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A962B501948CFC80000FA96 /* README.md in Resources */,
 				0A962B011948C3AB0000FA96 /* InfoPlist.strings in Resources */,
+				0A962B2A1948C5890000FA96 /* ViewController.xib in Resources */,
+				0A962B4E1948CFC80000FA96 /* ionicons.ttf in Resources */,
 				0A962B091948C3AB0000FA96 /* Images.xcassets in Resources */,
+				0A962B4F1948CFC80000FA96 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A962B271948C4850000FA96 /* ViewController.m in Sources */,
+				0A962B4D1948CFC80000FA96 /* IonIcons.m in Sources */,
+				0A962B53194915B40000FA96 /* UIBarButtonItem+Frame.m in Sources */,
+				0A962B2D1948C70D0000FA96 /* DropDownMenuController.m in Sources */,
 				0A962B071948C3AB0000FA96 /* AppDelegate.m in Sources */,
 				0A962B031948C3AB0000FA96 /* main.m in Sources */,
 			);
@@ -360,8 +418,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropDownMenu/DropDownMenu-Prefix.pch";
 				INFOPLIST_FILE = "DropDownMenu/DropDownMenu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,8 +433,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropDownMenu/DropDownMenu-Prefix.pch";
 				INFOPLIST_FILE = "DropDownMenu/DropDownMenu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -439,6 +499,7 @@
 				0A962B211948C3AB0000FA96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A962B221948C3AB0000FA96 /* Build configuration list for PBXNativeTarget "DropDownMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +508,7 @@
 				0A962B241948C3AB0000FA96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
