@@ -51,9 +51,6 @@ const CGFloat DropDownMenuMinWidth = 120.0f;
         self.menu.scrollEnabled = NO;
         
         [self.view addSubview:self.menu];
-    
-        [self.menu reloadData];
-        self.menu.frame = CGRectMake(0, 0, [self maxTableViewWidth], self.menu.contentSize.height);
     }
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
@@ -107,7 +104,17 @@ const CGFloat DropDownMenuMinWidth = 120.0f;
         menuX = fromRectMidX - halfMenuWidth;
     }
     
-    CGFloat menuY = rect.origin.y + rect.size.height;
+    CGFloat menuY = 0;
+    if ([self.trigger isKindOfClass:[UIBarButtonItem class]]) {
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) {
+            menuY = 0;
+        } else {
+            menuY = rect.origin.y + rect.size.height;
+        }
+    } else {
+        menuY = rect.origin.y + rect.size.height;
+    }
+    
     
     CGFloat menuHeight = menuFrame.size.height;
     
@@ -129,6 +136,9 @@ const CGFloat DropDownMenuMinWidth = 120.0f;
     }
     
     [self.parentViewController.view addSubview:self.view];
+    
+    [self.menu reloadData];
+    self.menu.frame = CGRectMake(0, 0, [self maxTableViewWidth], self.menu.contentSize.height);
     
     CGRect menuFrame = [self menuFrameFromRect:rect];
     
